@@ -5,14 +5,14 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "MomWeather — Nudge Studio",
-  description: "Weather, the way your mom would tell you.",
+  title: "Melted Money — Nudge Studio",
+  description: "See the damage before you spend.",
 };
 
-const BG = "#0D1A2E";
-const ACCENT = "#38BDF8";
+const BG = "#130F00";
+const ACCENT = "#FBBF24";
 
-export default function MomWeatherPage() {
+export default function MeltedMoneyPage() {
   return (
     <>
       <Nav />
@@ -41,8 +41,8 @@ export default function MomWeatherPage() {
               />
               <div className="relative w-[120px] h-[120px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/icons/momweather.png"
-                  alt="MomWeather icon"
+                  src="/icons/meltedmoney.png"
+                  alt="Melted Money icon"
                   width={120}
                   height={120}
                   className="w-full h-full object-cover"
@@ -68,10 +68,10 @@ export default function MomWeatherPage() {
                   Coming Soon
                 </span>
                 <span
-                  className="text-[11px] px-3 py-1 rounded-full border border-[#2a3a4a] text-[#888888]"
+                  className="text-[11px] px-3 py-1 rounded-full border border-[#2a1f00] text-[#888888]"
                   style={{ fontFamily: "var(--font-jetbrains-mono)" }}
                 >
-                  Android · iOS
+                  iOS · Android
                 </span>
               </div>
 
@@ -79,24 +79,24 @@ export default function MomWeatherPage() {
                 className="text-5xl sm:text-6xl font-bold text-[#F5F5F5] leading-none"
                 style={{ fontFamily: "var(--font-syne)" }}
               >
-                MomWeather
+                Melted Money
               </h1>
 
               <p
                 className="text-xl sm:text-2xl font-medium leading-snug"
                 style={{ color: ACCENT, fontFamily: "var(--font-dm-sans)" }}
               >
-                Weather, the way your mom would tell you.
+                See the damage before you spend.
               </p>
 
               <p
                 className="text-base leading-relaxed max-w-xl"
-                style={{ color: "#9ab0c8", fontFamily: "var(--font-dm-sans)" }}
+                style={{ color: "#b89a60", fontFamily: "var(--font-dm-sans)" }}
               >
-                A weather app that speaks in warm, human language — not charts
-                and percentages. Instead of "73°F, 40% precipitation
-                probability," it tells you "bring a light jacket, it might
-                drizzle this afternoon."
+                Before you swipe, Melted Money converts your purchases,
+                subscriptions, and installments into HP and Shield damage — so
+                you can feel the real cost before you commit. Spending
+                decisions, reframed as something you can actually see.
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function MomWeatherPage() {
         <section className="max-w-5xl mx-auto px-6 py-16">
           <div className="grid grid-cols-3 gap-8">
             {[
-              { label: "Platform", value: "Android · iOS" },
+              { label: "Platform", value: "iOS · Android" },
               { label: "Status", value: "Coming Soon" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (

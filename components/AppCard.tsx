@@ -12,6 +12,7 @@ interface AppCardProps {
   accentColor: string;
   href: string;
   isFirst?: boolean;
+  isLaunched?: boolean;
 }
 
 export default function AppCard({
@@ -22,8 +23,12 @@ export default function AppCard({
   accentColor,
   href,
   isFirst,
+  isLaunched,
 }: AppCardProps) {
   const [hovered, setHovered] = useState(false);
+
+  const badgeLabel = isLaunched ? "Available" : isFirst ? "Launching first" : "Coming soon";
+  const badgeAccent = isLaunched || isFirst;
 
   return (
     <Link
@@ -56,12 +61,12 @@ export default function AppCard({
             className="text-[10px] px-2 py-1 rounded-full border"
             style={{
               fontFamily: "var(--font-jetbrains-mono)",
-              color: isFirst ? accentColor : "#888888",
-              borderColor: isFirst ? `${accentColor}44` : "#333333",
-              backgroundColor: isFirst ? `${accentColor}11` : "transparent",
+              color: badgeAccent ? accentColor : "#888888",
+              borderColor: badgeAccent ? `${accentColor}44` : "#333333",
+              backgroundColor: badgeAccent ? `${accentColor}11` : "transparent",
             }}
           >
-            {isFirst ? "Launching first" : "Coming soon"}
+            {badgeLabel}
           </span>
         </div>
 

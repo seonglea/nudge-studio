@@ -12,7 +12,6 @@ const apps = [
       "A weather app that speaks in warm, human language — not charts and percentages.",
     accentColor: "#38BDF8",
     href: "/apps/momweather",
-    isFirst: true,
   },
   {
     iconSrc: "/icons/chromawalk.png",
@@ -23,6 +22,7 @@ const apps = [
     accentColor: "#EC4899",
     href: "/apps/chromawalk",
     isFirst: false,
+    isLaunched: true,
   },
   {
     iconSrc: "/icons/leftbehind.png",
@@ -32,7 +32,24 @@ const apps = [
       "Detects when you leave home via Wi-Fi signal and reminds you what to bring.",
     accentColor: "#06B6D4",
     href: "/apps/leftbehind",
-    isFirst: false,
+  },
+  {
+    iconSrc: "/icons/justgo.png",
+    name: "JustGO",
+    tagline: "One step. That's all you need.",
+    description:
+      "Dump everything in your head, get one clear next step. AI-powered focus for ADHD brains.",
+    accentColor: "#A3E635",
+    href: "/apps/justgo",
+  },
+  {
+    iconSrc: "/icons/meltedmoney.png",
+    name: "Melted Money",
+    tagline: "See the damage before you spend.",
+    description:
+      "Turn purchases, subscriptions, and installments into HP and Shield damage — before you commit.",
+    accentColor: "#FBBF24",
+    href: "/apps/meltedmoney",
   },
 ];
 
@@ -57,7 +74,7 @@ export default function Home() {
               className="text-3xl sm:text-4xl font-bold text-[#F5F5F5]"
               style={{ fontFamily: "var(--font-syne)" }}
             >
-              Three apps. Each a nudge.
+              Small apps. Big nudges.
             </h2>
           </div>
 

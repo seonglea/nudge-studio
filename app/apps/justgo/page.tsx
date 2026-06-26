@@ -5,14 +5,14 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "MomWeather — Nudge Studio",
-  description: "Weather, the way your mom would tell you.",
+  title: "JustGO — Nudge Studio",
+  description: "One step. That's all you need.",
 };
 
-const BG = "#0D1A2E";
-const ACCENT = "#38BDF8";
+const BG = "#080F04";
+const ACCENT = "#A3E635";
 
-export default function MomWeatherPage() {
+export default function JustGOPage() {
   return (
     <>
       <Nav />
@@ -41,8 +41,8 @@ export default function MomWeatherPage() {
               />
               <div className="relative w-[120px] h-[120px] rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/icons/momweather.png"
-                  alt="MomWeather icon"
+                  src="/icons/justgo.png"
+                  alt="JustGO icon"
                   width={120}
                   height={120}
                   className="w-full h-full object-cover"
@@ -68,10 +68,10 @@ export default function MomWeatherPage() {
                   Coming Soon
                 </span>
                 <span
-                  className="text-[11px] px-3 py-1 rounded-full border border-[#2a3a4a] text-[#888888]"
+                  className="text-[11px] px-3 py-1 rounded-full border border-[#1a2a0a] text-[#888888]"
                   style={{ fontFamily: "var(--font-jetbrains-mono)" }}
                 >
-                  Android · iOS
+                  iOS · Android
                 </span>
               </div>
 
@@ -79,24 +79,24 @@ export default function MomWeatherPage() {
                 className="text-5xl sm:text-6xl font-bold text-[#F5F5F5] leading-none"
                 style={{ fontFamily: "var(--font-syne)" }}
               >
-                MomWeather
+                JustGO
               </h1>
 
               <p
                 className="text-xl sm:text-2xl font-medium leading-snug"
                 style={{ color: ACCENT, fontFamily: "var(--font-dm-sans)" }}
               >
-                Weather, the way your mom would tell you.
+                One step. That&apos;s all you need.
               </p>
 
               <p
                 className="text-base leading-relaxed max-w-xl"
-                style={{ color: "#9ab0c8", fontFamily: "var(--font-dm-sans)" }}
+                style={{ color: "#8aaa6a", fontFamily: "var(--font-dm-sans)" }}
               >
-                A weather app that speaks in warm, human language — not charts
-                and percentages. Instead of "73°F, 40% precipitation
-                probability," it tells you "bring a light jacket, it might
-                drizzle this afternoon."
+                Dump everything flooding your mind — voice or text — and
+                JustGO&apos;s AI cuts through the noise to hand you one clear
+                first step. No lists. No planning paralysis. Built for ADHD
+                brains that need to move, not overthink.
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function MomWeatherPage() {
         <section className="max-w-5xl mx-auto px-6 py-16">
           <div className="grid grid-cols-3 gap-8">
             {[
-              { label: "Platform", value: "Android · iOS" },
+              { label: "Platform", value: "iOS · Android" },
               { label: "Status", value: "Coming Soon" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (
