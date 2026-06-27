@@ -65,7 +65,7 @@ export default function JustGOPage() {
                     backgroundColor: `${ACCENT}18`,
                   }}
                 >
-                  Coming Soon
+                  Available Now
                 </span>
                 <span
                   className="text-[11px] px-3 py-1 rounded-full border border-[#1a2a0a] text-[#888888]"
@@ -98,6 +98,20 @@ export default function JustGOPage() {
                 first step. No lists. No planning paralysis. Built for ADHD
                 brains that need to move, not overthink.
               </p>
+
+              <a
+                href="https://apps.apple.com/us/app/justgo-focus/id6783044600"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80 w-fit mt-2"
+                style={{
+                  backgroundColor: ACCENT,
+                  color: "#080F04",
+                  fontFamily: "var(--font-dm-sans)",
+                }}
+              >
+                Download on the App Store
+              </a>
             </div>
           </div>
         </section>
@@ -113,7 +127,7 @@ export default function JustGOPage() {
           <div className="grid grid-cols-3 gap-8">
             {[
               { label: "Platform", value: "iOS · Android" },
-              { label: "Status", value: "Coming Soon" },
+              { label: "Status", value: "Available" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col gap-2">

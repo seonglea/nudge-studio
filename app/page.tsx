@@ -41,6 +41,7 @@ const apps = [
       "Dump everything in your head, get one clear next step. AI-powered focus for ADHD brains.",
     accentColor: "#A3E635",
     href: "/apps/justgo",
+    isLaunched: true,
   },
   {
     iconSrc: "/icons/meltedmoney.png",
