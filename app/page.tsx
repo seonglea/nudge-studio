@@ -12,6 +12,7 @@ const apps = [
       "A weather app that speaks in warm, human language — not charts and percentages.",
     accentColor: "#38BDF8",
     href: "/apps/momweather",
+    isLaunched: true,
   },
   {
     iconSrc: "/icons/chromawalk.png",
