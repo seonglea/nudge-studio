@@ -71,7 +71,7 @@ export default function MomWeatherPage() {
                   className="text-[11px] px-3 py-1 rounded-full border border-[#2a3a4a] text-[#888888]"
                   style={{ fontFamily: "var(--font-jetbrains-mono)" }}
                 >
-                  Android · iOS
+                  iOS
                 </span>
               </div>
 
@@ -126,8 +126,8 @@ export default function MomWeatherPage() {
         <section className="max-w-5xl mx-auto px-6 py-16">
           <div className="grid grid-cols-3 gap-8">
             {[
-              { label: "Platform", value: "Android · iOS" },
-              { label: "Status", value: "Available" },
+              { label: "Platform", value: "iOS · Android" },
+              { label: "Status", value: "iOS Available" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col gap-2">

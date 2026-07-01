@@ -71,7 +71,7 @@ export default function StatusKeepPage() {
                   className="text-[11px] px-3 py-1 rounded-full border border-[#1e1a30] text-[#888888]"
                   style={{ fontFamily: "var(--font-jetbrains-mono)" }}
                 >
-                  Android
+                  iOS · Android
                 </span>
               </div>
 
@@ -114,7 +114,7 @@ export default function StatusKeepPage() {
         <section className="max-w-5xl mx-auto px-6 py-16">
           <div className="grid grid-cols-3 gap-8">
             {[
-              { label: "Platform", value: "Android" },
+              { label: "Platform", value: "iOS · Android" },
               { label: "Status", value: "Coming Soon" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (

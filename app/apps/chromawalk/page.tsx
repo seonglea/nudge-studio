@@ -125,8 +125,8 @@ export default function ChromaWalkPage() {
         <section className="max-w-5xl mx-auto px-6 py-16">
           <div className="grid grid-cols-3 gap-8">
             {[
-              { label: "Platform", value: "iOS" },
-              { label: "Status", value: "Available" },
+              { label: "Platform", value: "iOS · Android" },
+              { label: "Status", value: "iOS Available" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col gap-2">

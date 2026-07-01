@@ -71,7 +71,7 @@ export default function JustGOPage() {
                   className="text-[11px] px-3 py-1 rounded-full border border-[#1a2a0a] text-[#888888]"
                   style={{ fontFamily: "var(--font-jetbrains-mono)" }}
                 >
-                  iOS · Android
+                  iOS
                 </span>
               </div>
 
@@ -127,7 +127,7 @@ export default function JustGOPage() {
           <div className="grid grid-cols-3 gap-8">
             {[
               { label: "Platform", value: "iOS · Android" },
-              { label: "Status", value: "Available" },
+              { label: "Status", value: "iOS Available" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col gap-2">
