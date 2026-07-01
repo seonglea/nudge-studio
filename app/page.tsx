@@ -53,6 +53,15 @@ const apps = [
     accentColor: "#FBBF24",
     href: "/apps/meltedmoney",
   },
+  {
+    iconSrc: "/icons/statuskeep.png",
+    name: "StatusKeep",
+    tagline: "Never miss an immigration deadline.",
+    description:
+      "Auto-calculates your PGWP, PR card, and OHIP deadlines based on your profile. Built for Ontario newcomers.",
+    accentColor: "#A78BFA",
+    href: "/apps/statuskeep",
+  },
 ];
 
 export default function Home() {
