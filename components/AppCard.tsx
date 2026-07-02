@@ -27,7 +27,7 @@ export default function AppCard({
 }: AppCardProps) {
   const [hovered, setHovered] = useState(false);
 
-  const badgeLabel = isLaunched ? "Available" : isFirst ? "Launching first" : "Coming soon";
+  const badgeLabel = isLaunched ? "iOS Available" : isFirst ? "Launching first" : "Coming soon";
   const badgeAccent = isLaunched || isFirst;
 
   return (
