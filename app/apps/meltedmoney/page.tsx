@@ -65,13 +65,13 @@ export default function MeltedMoneyPage() {
                     backgroundColor: `${ACCENT}18`,
                   }}
                 >
-                  Coming Soon
+                  Available Now
                 </span>
                 <span
                   className="text-[11px] px-3 py-1 rounded-full border border-[#2a1f00] text-[#888888]"
                   style={{ fontFamily: "var(--font-jetbrains-mono)" }}
                 >
-                  iOS · Android
+                  iOS
                 </span>
               </div>
 
@@ -98,6 +98,20 @@ export default function MeltedMoneyPage() {
                 you can feel the real cost before you commit. Spending
                 decisions, reframed as something you can actually see.
               </p>
+
+              <a
+                href="https://apps.apple.com/us/app/melted-money/id6784492496"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80 w-fit mt-2"
+                style={{
+                  backgroundColor: ACCENT,
+                  color: "#130F00",
+                  fontFamily: "var(--font-dm-sans)",
+                }}
+              >
+                Download on the App Store
+              </a>
             </div>
           </div>
         </section>
@@ -113,7 +127,7 @@ export default function MeltedMoneyPage() {
           <div className="grid grid-cols-3 gap-8">
             {[
               { label: "Platform", value: "iOS · Android" },
-              { label: "Status", value: "Coming Soon" },
+              { label: "Status", value: "iOS Available" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col gap-2">

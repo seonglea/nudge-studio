@@ -51,6 +51,7 @@ const apps = [
       "Turn purchases, subscriptions, and installments into HP and Shield damage — before you commit.",
     accentColor: "#FBBF24",
     href: "/apps/meltedmoney",
+    isLaunched: true,
   },
   {
     iconSrc: "/icons/statuskeep.png",
