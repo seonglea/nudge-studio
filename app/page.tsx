@@ -22,8 +22,7 @@ const apps = [
       "A walking app that turns your daily walk into a color collection journey.",
     accentColor: "#EC4899",
     href: "/apps/chromawalk",
-    isFirst: false,
-    isLaunched: true,
+    fullyLaunched: true,
   },
   {
     iconSrc: "/icons/leftbehind.png",
