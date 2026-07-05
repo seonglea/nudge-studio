@@ -32,6 +32,7 @@ const apps = [
       "Detects when you leave home via Wi-Fi signal and reminds you what to bring.",
     accentColor: "#06B6D4",
     href: "/apps/leftbehind",
+    fullyLaunched: true,
   },
   {
     iconSrc: "/icons/justgo.png",

@@ -65,7 +65,7 @@ export default function LeftBehindPage() {
                     backgroundColor: `${ACCENT}18`,
                   }}
                 >
-                  Coming Soon
+                  Available Now
                 </span>
                 <span
                   className="text-[11px] px-3 py-1 rounded-full border border-[#1a2a3a] text-[#888888]"
@@ -97,6 +97,20 @@ export default function LeftBehindPage() {
                 what to bring. Forgot your charger? Left your keys? LeftBehind
                 catches it before you&apos;re halfway down the street.
               </p>
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.leavingcheck.nativeapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80 w-fit mt-2"
+                style={{
+                  backgroundColor: ACCENT,
+                  color: "#0A0F1E",
+                  fontFamily: "var(--font-dm-sans)",
+                }}
+              >
+                Download on Google Play
+              </a>
             </div>
           </div>
         </section>
@@ -112,7 +126,7 @@ export default function LeftBehindPage() {
           <div className="grid grid-cols-3 gap-8">
             {[
               { label: "Platform", value: "Android" },
-              { label: "Status", value: "Coming Soon" },
+              { label: "Status", value: "Available" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col gap-2">
