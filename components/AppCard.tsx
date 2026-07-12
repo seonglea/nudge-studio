@@ -14,6 +14,7 @@ interface AppCardProps {
   isFirst?: boolean;
   isLaunched?: boolean;
   fullyLaunched?: boolean;
+  androidLaunched?: boolean;
 }
 
 export default function AppCard({
@@ -26,11 +27,12 @@ export default function AppCard({
   isFirst,
   isLaunched,
   fullyLaunched,
+  androidLaunched,
 }: AppCardProps) {
   const [hovered, setHovered] = useState(false);
 
-  const badgeLabel = fullyLaunched ? "Available" : isLaunched ? "iOS Available" : isFirst ? "Launching first" : "Coming soon";
-  const badgeAccent = fullyLaunched || isLaunched || isFirst;
+  const badgeLabel = fullyLaunched ? "Available" : androidLaunched ? "Android Available" : isLaunched ? "iOS Available" : isFirst ? "Launching first" : "Coming soon";
+  const badgeAccent = fullyLaunched || androidLaunched || isLaunched || isFirst;
 
   return (
     <Link
