@@ -64,6 +64,15 @@ const apps = [
     href: "/apps/statuskeep",
     isLaunched: true,
   },
+  {
+    iconSrc: "/icons/mycafe.png",
+    name: "My Cafe",
+    tagline: "Your home café, beautifully managed.",
+    description:
+      "Track ingredients, save recipes, and see how much you save vs. café prices. Your home café diary.",
+    accentColor: "#D4A574",
+    href: "/apps/mycafe",
+  },
 ];
 
 export default function Home() {
