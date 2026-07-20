@@ -73,6 +73,15 @@ const apps = [
     accentColor: "#D4A574",
     href: "/apps/mycafe",
   },
+  {
+    iconSrc: "/icons/before.png",
+    name: "Before",
+    tagline: "Record it before it matters.",
+    description:
+      "Capture photos, notes, and documents before something goes wrong. Private email alerts included.",
+    accentColor: "#52B788",
+    href: "/apps/before",
+  },
 ];
 
 export default function Home() {
