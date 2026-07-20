@@ -71,7 +71,7 @@ export default function MomWeatherPage() {
                   className="text-[11px] px-3 py-1 rounded-full border border-[#2a3a4a] text-[#888888]"
                   style={{ fontFamily: "var(--font-jetbrains-mono)" }}
                 >
-                  iOS
+                  iOS · Android
                 </span>
               </div>
 
@@ -99,19 +99,34 @@ export default function MomWeatherPage() {
                 drizzle this afternoon."
               </p>
 
-              <a
-                href="https://apps.apple.com/us/app/momweather/id6782077942"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80 w-fit mt-2"
-                style={{
-                  backgroundColor: ACCENT,
-                  color: "#0D1A2E",
-                  fontFamily: "var(--font-dm-sans)",
-                }}
-              >
-                Download on the App Store
-              </a>
+              <div className="flex flex-wrap gap-3 mt-2">
+                <a
+                  href="https://apps.apple.com/us/app/momweather/id6782077942"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80"
+                  style={{
+                    backgroundColor: ACCENT,
+                    color: "#0D1A2E",
+                    fontFamily: "var(--font-dm-sans)",
+                  }}
+                >
+                  App Store
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.momweather.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-80"
+                  style={{
+                    border: `1px solid ${ACCENT}50`,
+                    color: ACCENT,
+                    fontFamily: "var(--font-dm-sans)",
+                  }}
+                >
+                  Google Play
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -127,7 +142,7 @@ export default function MomWeatherPage() {
           <div className="grid grid-cols-3 gap-8">
             {[
               { label: "Platform", value: "iOS · Android" },
-              { label: "Status", value: "iOS Available" },
+              { label: "Status", value: "Available" },
               { label: "Price", value: "Free" },
             ].map(({ label, value }) => (
               <div key={label} className="flex flex-col gap-2">
