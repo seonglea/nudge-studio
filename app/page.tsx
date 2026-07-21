@@ -62,7 +62,7 @@ const apps = [
       "Auto-calculates your PGWP, PR card, and OHIP deadlines based on your profile. Built for Ontario newcomers.",
     accentColor: "#A78BFA",
     href: "/apps/statuskeep",
-    isLaunched: true,
+    fullyLaunched: true,
   },
   {
     iconSrc: "/icons/mycafe.png",
